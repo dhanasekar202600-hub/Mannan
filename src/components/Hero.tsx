@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Phone, Gift, ShieldCheck, Ruler, Building, Sparkles } from 'lucide-react';
 import { COMPANY_DETAILS } from '../data/websiteData';
+import heroImage from '../assets/images/hero_modern_villa_1793963645933.jpg';
 
 interface HeroProps {
   onOpenConsultationModal: () => void;
@@ -12,7 +13,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultationModal }) => {
       {/* Background Hero Image with measured dark contrast scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_modern_villa_1793963645933.jpg"
+          src={heroImage}
           alt="Modern luxury villa constructed by SMB BUILDERS"
           className="w-full h-full object-cover object-center opacity-45 scale-102 transform duration-1000 ease-out"
           referrerPolicy="no-referrer"
